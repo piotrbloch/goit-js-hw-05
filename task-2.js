@@ -3,7 +3,7 @@
 // const getUsersWithFriend = students.filter((student) => student.score >= HIGH_SCORE);
 
 const getUsersWithFriend = (users, friendName) =>
-  users.filter((user) => user.friends == friendName);
+  users.filter((user) => user.friends.includes(friendName));
 
 const allUsers = [
   {

@@ -1,9 +1,8 @@
-
-
 const sortByDescendingFriendCount = (users) =>
-    
-    users.map((user) => user.name);
-    
+  users.toSorted(
+    (firstUser, secondUser) =>
+      secondUser.friends.length - firstUser.friends.length
+  );
 
 console.log(
   sortByDescendingFriendCount([
